@@ -1,0 +1,132 @@
+#top {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(#32373B,#FAF9F6);
+}
+#bottom {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(#FAF9F6, #32373B);
+}
+#top, #bottom {
+    height: 50%;
+}
+#upsideDownUrlText .urlText, #upsideDownUrlTextNew .urlText {
+    text-align: center;
+    line-height: 100%;
+    color: #32373B;
+    font-family: 'Courier New', monospace;
+    -webkit-animation-fill-mode: none;
+    animation-fill-mode: none;
+    transition: 0.3s;  
+}
+#urlTextTop, #upsideDownUrlText  {
+    transition: 0.3s;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.underText {
+    -moz-transform: scale(1, -1);
+    -webkit-transform: scale(1, -1);
+    -o-transform: scale(1, -1);
+    -ms-transform: scale(1, -1);
+    transform: scale(1, -1);
+}
+.urlTextHead a {
+    font-size: calc(1.375rem + 1.5vw);
+    transition: 0.3s;  
+    color: #32373B;
+    text-decoration: none;
+    @media (width <= 370px) {
+        font-size: calc(.975rem + 1.5vw); 
+    }
+}
+.urlTextHead a:hover {
+    transition: 0.3s;
+    color: #9c9c9c;
+    text-decoration: none;
+}
+#urlTextOne {
+    opacity: 80%; 
+    font-size: calc(1.275rem + 1.5vw);
+    @media (width <= 370px) {
+        font-size: calc(.875rem + 1.5vw); 
+    }
+}
+#urlTextTwo{
+    opacity: 60%;
+    font-size: calc(1.175rem + 1.5vw);
+    @media (width <= 370px) {
+        font-size: calc(.775rem + 1.5vw); 
+    }
+}
+#urlTextThree{
+    opacity: 40%;
+    font-size: calc(1.075rem + 1.5vw);
+    @media (width <= 370px) {
+        font-size: calc(.675rem + 1.5vw); 
+    }
+}
+#urlTextFour{
+    opacity: 20%;
+    font-size: calc(.975rem + 1.5vw);
+    @media (width <= 370px) {
+        font-size: calc(.575rem + 1.5vw); 
+    }
+}
+#urlTextFive{
+    opacity: 10%;
+    font-size: calc(.875rem + 1.5vw);
+    @media (width <= 370px) {
+        font-size: calc(.475rem + 1.5vw); 
+    }
+}
+.fadeInOne {animation: fadeInOne 2s;}
+.fadeInTwo {animation: fadeInTwo 2s;}
+.fadeInThree {animation: fadeInThree 2s;}
+.fadeInFour {animation: fadeInFour 2s;}
+.fadeInFive {animation: fadeInFive 2s;}
+.fadeInHead {animation: fadeInHead 2s;}
+@keyframes fadeInOne {
+    0% { opacity: 0; }
+    100% { opacity: 0.8;}
+}
+@keyframes fadeInTwo {
+    0% { opacity: 0; }
+    100% { opacity: 0.6;}
+}
+@keyframes fadeInThree {
+    0% { opacity: 0; }
+    100% { opacity: 0.4;}
+}
+@keyframes fadeInFour {
+    0% { opacity: 0; }
+    100% { opacity: 0.2;}
+}
+@keyframes fadeInFive {
+    0% { opacity: 0; }
+    100% { opacity: 0.1;}
+}
+@keyframes fadeInHead {
+    0% { opacity: 0; }
+    100% { opacity: 1;}
+}
+.floatingArrowAnimation { 
+	animation-name: floatingArrowAnimation;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+@keyframes floatingArrowAnimation {
+	0% { transform: translate(0, 0px); }
+	50% { transform: translate(0, 15px); }
+	100% { transform: translate(0, -0px); } 
+}
